@@ -12,7 +12,16 @@
 
   <div class="container">
 
-    <div class="game">
+    <div class="startGame" style="display: flex; flex-direction: column; width: 200px; text-align: center;
+    font-size: 20px; color: white;">
+      <p style="display: none;" id="YouWin"><b>You Win</b></p>
+      <p style="display: none;" id="ComputerWins"><b>Computer Wins</b></p>
+      <button id="restart" style="display: none; border: none; background-color: red; padding: 20px; border-radius: 50px; font-size: 20px; color: white;
+      cursor: pointer;">restart game</button>
+      </div>
+  
+
+    <div class="game" id="gameBox">
       <h1><span id="r">R</span>ock <span id="p">P</span>aper <span id="s">S</span>cissors</h1>
       <div class="buttons" id="choices">
       <button onclick="playGame('rock')" id="rock">🪨</button>
